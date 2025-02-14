@@ -22,7 +22,7 @@ const Login = () => {
       <form className="login-form" onSubmit={handleSubmit}>
         <h2>Login</h2>
         <div className="input-group">
-          <label>Email</label>
+          <label>Emails</label>
           <input
             type="email"
             value={email}
