@@ -13,7 +13,7 @@ const Login = () => {
       alert("Login Successful");
       navigate("/dashboard");
     } else {
-      alert("Invalid Credentials");
+      alert  ("Invalid Credentials, please ensure it is correct");
     }
   };
 
