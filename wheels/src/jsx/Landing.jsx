@@ -71,7 +71,7 @@ const LandingPage = () => {
         {/* About Section */}
         <section id="about" className="about">
           <h3>About Us</h3>
-          <p>Wheels is revolutionizing Nepal's car service industry by digitally empowering local garages with an all-in-one software solution. Our platform enables workshops to track leads, invoices, and service history while ensuring seamless customer communication, transparency, and no hidden charges.</p>
+          <p>Wheels iss revolutionizing Nepal's car service industry by digitally empowering local garages with an all-in-one software solution. Our platform enables workshops to track leads, invoices, and service history while ensuring seamless customer communication, transparency, and no hidden charges.</p>
         </section>
 
         {/* Feedback Section */}
