@@ -1,0 +1,172 @@
+
+
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+    padding: 1rem;
+
+  }
+  
+  .login-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 350px; /* Increased from 400px */
+    position: fixed;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+  }
+  
+  .back-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    color: #22C55E;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    color: #111827;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #f9fafb;
+    font-size: 0.875rem;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #22C55E;
+    ring: 2px solid #22C55E;
+  }
+  
+  .forgot-password {
+    color: #22C55E;
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-align: right;
+    margin-top: 0.25rem; /* Added space above the forgot password link */
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #22C55E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0.5rem; /* Added space above the login button */
+  }
+  
+  .login-button:hover {
+    background-color: #16a34a;
+  }
+  
+  .emergency-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #EF4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .emergency-button:hover {
+    background-color: #dc2626;
+  }
+  
+  .signup-text {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .signup-link {
+    color: #22C55E;
+    cursor: pointer;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .login-card {
+      padding: 1.5rem;
+      max-width: 400px; /* Smaller width on mobile */
+    }
+    
+    .title {
+      font-size: 1.25rem;
+    }
+    
+    .subtitle {
+      font-size: 1.125rem;
+    }
+  }

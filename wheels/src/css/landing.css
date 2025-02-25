@@ -1,0 +1,329 @@
+/* General styles */
+body {
+    flex: 1;
+    margin-top: 300px;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      overflow-x: hidden; /* Prevents horizontal scrolling */
+  
+  }
+  
+  .landing {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Fixed Heading Section */
+  .heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #28a745;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .company-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    margin-right: 100px;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: opacity 0.2s;
+  }
+  
+  .nav-links a:hover {
+    opacity: 0.8;
+  }
+  
+  .dark-mode-toggle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4px 8px;
+    font-size: 12px;
+    min-width: 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  
+  /* Main Content Area */
+  .body {
+    flex: 1;
+    margin-top: 700px;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: space-between;
+    padding: 40px;
+    min-height: calc(100vh - 60px);
+    margin-top: 10px; /* Add this to create space for the fixed heading */
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h2 {
+    margin-top: 500px;
+    font-size: 36px;
+    margin-bottom: 10px; /* Space below the heading */
+    white-space: nowrap; /* Prevent text from wrapping */
+    align-self: flex-start; /* Moves the heading to the left */
+    text-align: left;
+  
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    margin-top: 30px;
+    font-style: center;
+  
+  
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .primary-btn, .secondary-btn {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: opacity 0.2s;
+  }
+  
+  .primary-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .secondary-btn {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .primary-btn:hover, .secondary-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Hero Image */
+  .hero-image {
+    max-width: 50%;
+    margin-top: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 60px 40px;
+    background-color: inherit;
+  }
+  
+  .services h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background-color: inherit;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s;
+  }
+  .servuce-card1{
+    width: 50%;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card h4 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 40px;
+    background-color: inherit;
+    text-align: center;
+  }
+  
+  .about h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Footer Section */
+  .footer {
+    padding: 30px;
+    text-align: center;
+    background-color: inherit;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-mode .footer {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Feedback Section */
+  .feedback {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center text alignment */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 40px 0; /* Margin above and below the section */
+  }
+  
+  .feedback h3 {
+    font-size: 28px; /* Font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #333; /* Dark color for the heading */
+  }
+  
+  .feedback p {
+    font-size: 18px; /* Font size for the paragraph */
+    margin-bottom: 25px; /* Space below the paragraph */
+    color: #666; /* Slightly lighter color for the text */
+  }
+  
+  .feedback-btn {
+    width: auto; /* Allow width to adjust based on content */
+    background-color: #28a745; /* Button background color */
+    color: white; /* Button text color */
+    padding: 8px 16px; /* Reduced padding for smaller button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    font-size: 14px; /* Slightly smaller font size */
+    cursor: pointer; /* Cursor change on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    /* Optional: add a hover effect */
+  }
+  
+  .feedback-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .hero-image {
+      max-width: 100%;
+      margin-top: 700px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .dark-mode-toggle {
+      right: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 28px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .primary-btn, .secondary-btn {
+      width: 100%;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+    }
+  }
